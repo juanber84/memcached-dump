@@ -3,6 +3,7 @@ memcache-dump
 
 Dump and restore your memcache information
 
+## requeriments
 
 Fist you must install the followings libraries (ubuntu/debian).
 
