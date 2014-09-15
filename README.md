@@ -14,7 +14,7 @@ Fist you must install the followings libraries (ubuntu/debian).
 
 Usage:
 
-	python memcachedump.py -f memdump -h 127.0.0.1 -p 11211
+	python memcacheddump.py -f memdump -h 127.0.0.1 -p 11211
 
 Options
 
@@ -26,7 +26,7 @@ Options
 
 Usage:
 
-	python memcacherestore.py.py -f memdump -h 127.0.0.1 -p 11211
+	python memcachedrestore.py.py -f memdump -h 127.0.0.1 -p 11211
 
 Options
 
