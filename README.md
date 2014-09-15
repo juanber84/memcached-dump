@@ -9,9 +9,9 @@ Fist you must install the followings libraries (ubuntu/debian).
 	apt-get install python-memcache
 	apt-get install libmemcached-tools
 
-## Memcache dump
+## memcachedump
 
-	python backup.py -f memcachedumpfile -h 127.0.0.1 -p 11211
+	python memcachedump.py -f memcachedumpfile -h 127.0.0.1 -p 11211
 
 Options
 
