@@ -7,7 +7,7 @@ import sys
 import memcache
 import json
 
-out = "memcachedump"
+out = "memdump"
 host = "127.0.0.1"
 port = "11211"
 

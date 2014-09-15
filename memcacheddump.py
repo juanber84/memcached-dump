@@ -8,7 +8,7 @@ import memcache
 import subprocess
 import json
 
-out = "memcachedump"
+out = "memdump"
 host = "127.0.0.1"
 port = "11211"
 if "-f" in sys.argv:
