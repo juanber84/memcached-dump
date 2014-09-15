@@ -1,4 +1,5 @@
 memcache-dump
 =============
 
-Dump and restore your memcache datas
+Dump and restore your memcache information
+
