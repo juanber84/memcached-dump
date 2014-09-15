@@ -11,6 +11,8 @@ Fist you must install the followings libraries (ubuntu/debian).
 
 ## memcachedump
 
+Usage:
+
 	python memcachedump.py -f memcachedumpfile -h 127.0.0.1 -p 11211
 
 Options
