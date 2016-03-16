@@ -20,7 +20,7 @@ if "-p" in sys.argv:
 print "conecting..."
 s = memcache.Client([host+":"+port])
 print "checking keys..."
-output = subprocess.check_output("memcdump --servers=localhost", shell=True)
+output = subprocess.check_output("memcdump --servers="+host, shell=True)
 data= output.split('\n')
 lista = {}
 for key  in data:
