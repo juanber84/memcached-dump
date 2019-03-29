@@ -1,6 +1,6 @@
 """
 apt-get install python-memcache
-apt-get install libmemcached-tools
+apt-get install libmemcache-tools
 """
 #!/usr/bin/python
 import sys
