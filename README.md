@@ -26,7 +26,7 @@ Options
 
 Usage:
 
-	python memcachedrestore.py.py -f memdump -h 127.0.0.1 -p 11211
+	python memcachedrestore.py -f memdump -h 127.0.0.1 -p 11211
 
 Options
 
