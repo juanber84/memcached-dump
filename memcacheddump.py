@@ -1,6 +1,6 @@
 """
 apt-get install python-memcache
-apt-get install libmemcached-tools
+apt-get install libmemcache-tools
 """
 #!/usr/bin/python
 import sys
@@ -18,9 +18,10 @@ if "-h" in sys.argv:
 if "-p" in sys.argv:
 	port = sys.argv[sys.argv.index("-p")+1]
 print "conecting..."
-s = memcache.Client([host+":"+port])
+hostport = host+":"+port
+s = memcache.Client([hostport])
 print "checking keys..."
-output = subprocess.check_output("memcdump --servers="+host, shell=True)
+output = subprocess.check_output("memcdump --servers="+hostport, shell=True)
 data= output.split('\n')
 lista = {}
 for key  in data:
