@@ -7,7 +7,7 @@ Dump and restore your memcached information
 
 Fist you must install the followings libraries (ubuntu/debian).
 
-	apt-get install python-memcached
+	apt-get install python-memcache
 	apt-get install libmemcache-tools
 
 ## memcacheddump
