@@ -1,6 +1,6 @@
 """
-apt-get install python-memcache
-apt-get install libmemcache-tools
+apt-get install python3-memcache
+apt-get install libmemcached-tools
 """
 #!/usr/bin/python
 import sys
@@ -17,15 +17,15 @@ if "-h" in sys.argv:
         host = sys.argv[sys.argv.index("-h")+1]
 if "-p" in sys.argv:
         port = sys.argv[sys.argv.index("-p")+1]
-print "conecting..."
+print ("conecting...")
 s = memcache.Client([host+":"+port])
-print "reading dumpfile..."
+print ("reading dumpfile...")
 c = open(out, 'r').read()
 try:
     decoded = json.loads(c)
     for key in decoded:
         s.set(str(key),str(decoded[key]))
-        print "inserting  "+key+"..."
+        print ("inserting  "+key+"...")
 except (ValueError, KeyError, TypeError):
-    print "JSON format error"
-print "restore finished"
+    print ("JSON format error")
+print ("restore finished")
